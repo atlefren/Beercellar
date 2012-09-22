@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>My beer cellar</title>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+      <script src="{{ MEDIA_URL }}tablesorter/jquery.tablesorter.min.js" type="text/javascript"></script>
+      <link href="{{ MEDIA_URL }}bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link media="screen" rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/style.css" />
+</head>
+<body>
+
+{% load my_filters %}
+
+<div class="container-fluid">
+      <div>
+            <h1>My beer cellar</h1>
+      
+            <ul class="breadcrumb">
+                  <li><a href="/beerlist">Beers</a></li>
+                  {% if sub.type %}          
+                  <li><span class="divider">/</span><a href="/beerlist/{{sub.link}}">{{sub.type}}</a></li>
+                  {% endif %}
+                  {% if sub.name %} 
+                  <li class="active"><span class="divider">/</span>{{sub.name}}</li>
+                  {% endif %}    
+            </ul>
+      </div>     
+      <div>
+            {% block content %}{% endblock %}
+      </div>
+</body>
+</html>

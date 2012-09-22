@@ -1,0 +1,52 @@
+{% extends "beerlist/base.html" %}
+{% load my_filters %}
+{% block content %}      
+<table id="beers" class="table table-bordered">
+      <thead>
+            <tr>
+                  <th>Brewer(s)</th>
+                  <th>Beer</th>
+                  <th>Style</th>
+                  <th>ABV</th>
+                  <th>Size (l)</th>
+                  <th>Quantity</th>
+                  <th></th>
+                  <th>Country</th>                  
+                  {% if user.is_authenticated %}<th></th>{% endif %}
+            <tr>
+      </thead>
+      <tbody>      
+      {% for beer in beers.all %}
+      <tr {% if beer.amount < 1 %}class="disabled"{% endif %} >
+            <td>{% autoescape off %}{{beer.brewers.all|print_names}}{% endautoescape %}</td>
+            <td class="headerSortDown">{{ beer.name }} (<a href="{{beer.ratebeerurl}}" target="_blank">RB</a>)</td>
+            <td><a href="/beerlist/style/{{beer.beer_type.id}}">{{beer.beer_type.name}}</a></td>
+            <td>{{beer.abv|two_dec|value_na}} </td>
+            <td>{{beer.size|two_dec|value_na}} </td>
+            <td>{{beer.amount}} </td>
+            <td>
+                  {% if beer.batch%} batch #{{beer.batch}} {% endif %}
+                  {% if beer.brewed%} bottled: {{beer.brewed|date:"d.m.Y"}} {% endif %}
+                  {% if beer.best_before%} best before: {{beer.best_before|date:"d.m.Y"}} {% endif %}
+            </td>
+            <td>{% autoescape off %}{{beer.brewers.all|get_countries}}{% endautoescape %}</td>
+            {% if user.is_authenticated %}<td><a href="/beerlist/beer/{{beer.id}}/drink" title="drink"><i class="icon-minus-sign"></i></a> <a title="add" href="/beerlist/beer/{{beer.id}}/add"><i class="icon-plus-sign"></i></a> </td>{% endif %}
+      </tr>
+      {% endfor %}
+      </tbody>
+</table>
+<p>Total: {{beers.all|length}} distinct beer(s){% if num_liters %}, totalling {{num_liters}} liters{% endif%}.</p>
+
+{% if user.is_authenticated %}
+<p><a href="/admin/beerlist/beer/add/" target="_blank" class="btn btn-primary"><i class="icon-plus-sign"></i> Add beer</a></p>
+{% endif%}
+
+<script type="text/javascript">
+      console.log($(".table"));
+
+      $(document).ready(function(){ 
+            $("#beers").tablesorter({sortList: [[0,0], [1,0]]}); 
+      }); 
+</script>
+{% endblock %}
+
