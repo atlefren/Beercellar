@@ -66,7 +66,8 @@ def add_beer(request, beer_id):
 def count_liters(beers):
       num_liters = 0;
       for beer in beers:
-            num_liters += beer.size*beer.amount;
+            if beer.size and beer.amount:
+                num_liters += beer.size*beer.amount
       return num_liters
             
             
