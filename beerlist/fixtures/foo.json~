@@ -1,0 +1,611 @@
+[
+    {
+        "pk": 1,
+        "model": "beerlist.country",
+        "fields": {
+            "code": "scotland",
+            "name": "Scotland"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "beerlist.country",
+        "fields": {
+            "code": "no",
+            "name": "Norway"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "beerlist.country",
+        "fields": {
+            "code": "dk",
+            "name": "Denmark"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "beerlist.country",
+        "fields": {
+            "code": "nl",
+            "name": "Netherlands"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "beerlist.country",
+        "fields": {
+            "code": "us",
+            "name": "USA"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "beerlist.country",
+        "fields": {
+            "code": "it",
+            "name": "Italy"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "beerlist.country",
+        "fields": {
+            "code": "gb",
+            "name": "United Kingdom"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "beerlist.country",
+        "fields": {
+            "code": "is",
+            "name": "Iceland"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 1,
+            "name": "BrewDog"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 2,
+            "name": "N\u00f8gne \u00d8"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 3,
+            "name": "Mikkeller"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 2,
+            "name": "\u00c6gir"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 3,
+            "name": "Midtfyns Bryghus"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 4,
+            "name": "De Molen"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 5,
+            "name": "Three Floyds"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 6,
+            "name": "Birrificio del Ducato"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 7,
+            "name": "Fullers"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 5,
+            "name": "Flying Dog"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 5,
+            "name": "Port Brewing/Lost Abbey"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "beerlist.brewery",
+        "fields": {
+            "country": 8,
+            "name": "Viking \u00d6lgerd"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "Black IPA"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "Imperial Stout"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "Scotch Ale"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "American Strong Ale"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "Brown Ale"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "Abbey Tripel"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "English Strong Ale"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "Imperial Porter"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "Barly WIne"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "Imperial IPA"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "Smoked"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "beerlist.beertype",
+        "fields": {
+            "name": "Baltic Porter"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/brewdog-abstrakt-ab06/144960/",
+            "name": "Abstract AB:06",
+            "price": null,
+            "beer_type": 1,
+            "amount": 1,
+            "abv": "11.5",
+            "brewers": [
+                1
+            ],
+            "size": "0.37"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/brewdog-nogne-o-mikkeller-black-tokyo-horizon/137813/",
+            "name": "Black Tokyo* Horizon",
+            "price": null,
+            "beer_type": 2,
+            "amount": 1,
+            "abv": "17.2",
+            "brewers": [
+                1,
+                2,
+                3
+            ],
+            "size": "0.33"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/aegir-lindisfarne-scotch-ale/161154/",
+            "name": "Lindisfarne",
+            "price": null,
+            "beer_type": 3,
+            "amount": 3,
+            "abv": "7",
+            "brewers": [
+                4
+            ],
+            "size": "0.5"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/brewdog-abstrakt-ab08/161094/",
+            "name": "Abstract AB:08",
+            "price": null,
+            "beer_type": 4,
+            "amount": 1,
+            "abv": "11.8",
+            "brewers": [
+                1
+            ],
+            "size": "0.37"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/mikkeller-jackie-brown/62660/",
+            "name": "Jackie Brown",
+            "price": null,
+            "beer_type": 5,
+            "amount": 1,
+            "abv": "6",
+            "brewers": [
+                3
+            ],
+            "size": "0.5"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/brewdog-dog-a/172237/",
+            "name": "Dog A",
+            "price": null,
+            "beer_type": 2,
+            "amount": 1,
+            "abv": "15.1",
+            "brewers": [
+                1
+            ],
+            "size": "0.33"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/nogne-o-tiger-tripel/104461/",
+            "name": "Tiger Tripel",
+            "price": null,
+            "beer_type": 6,
+            "amount": 1,
+            "abv": "9",
+            "brewers": [
+                2
+            ],
+            "size": "0.5"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/nogne-o-imperial-brown-ale/58333/",
+            "name": "Imperial Brown Ale",
+            "price": null,
+            "beer_type": 7,
+            "amount": 1,
+            "abv": "7.5",
+            "brewers": [
+                2
+            ],
+            "size": "0.5"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/midtfyns-gleipner/145757/",
+            "name": "Gleipner",
+            "price": null,
+            "beer_type": 1,
+            "amount": 1,
+            "abv": "9.1",
+            "brewers": [
+                5
+            ],
+            "size": "0.5"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/midtfyns-de-molen-x-porter/128482/",
+            "name": "X-Porter",
+            "price": null,
+            "beer_type": 8,
+            "amount": 1,
+            "abv": "8",
+            "brewers": [
+                5,
+                6
+            ],
+            "size": "0.5"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/brewdog-three-floyds-bitch-please/137812/",
+            "name": "Bitch Please",
+            "price": null,
+            "beer_type": 9,
+            "amount": 1,
+            "abv": "11.5",
+            "brewers": [
+                1,
+                7
+            ],
+            "size": "0.33"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/brewdog-sink-the-bismarck/118414/",
+            "name": "Sink The Bismarck",
+            "price": null,
+            "beer_type": 10,
+            "amount": 1,
+            "abv": "41",
+            "brewers": [
+                1
+            ],
+            "size": "0.33"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/de-molen-festival-smoked-black-ipa/154889/",
+            "name": "Festival Smoked Black IPA",
+            "price": null,
+            "beer_type": 11,
+            "amount": 1,
+            "abv": "8.8",
+            "brewers": [
+                6
+            ],
+            "size": "0.75"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/birrificio-del-ducato-verdi-black-jack/124259/",
+            "name": "Verdi (Black Jack)",
+            "price": null,
+            "beer_type": 2,
+            "amount": 1,
+            "abv": "9",
+            "brewers": [
+                8
+            ],
+            "size": "0.33"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/fullers-vintage-ale-2011/156275/",
+            "name": "Fullers Vintage Ale 2011",
+            "price": null,
+            "beer_type": 7,
+            "amount": 1,
+            "abv": "8.5",
+            "brewers": [
+                9
+            ],
+            "size": "0.5"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/fullers-brewers-reserve-limited-edition-no-3-oak-aged-ale-auchentoshan/150236/",
+            "name": "Brewer\u2019s Reserve Limited Edition No 3 Oak Aged Ale Auchentoshan",
+            "price": null,
+            "beer_type": 7,
+            "amount": 1,
+            "abv": "9",
+            "brewers": [
+                9
+            ],
+            "size": "0.5"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/flying-dog-gonzo-imperial-porter/45950/",
+            "name": "Gonzo Imperial Porter",
+            "price": null,
+            "beer_type": 8,
+            "amount": 1,
+            "abv": "9.2",
+            "brewers": [
+                10
+            ],
+            "size": "0.33"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/brewdog-paradox-jura/162521/",
+            "name": "Paradox Jura",
+            "price": null,
+            "beer_type": 2,
+            "amount": 1,
+            "abv": "15",
+            "brewers": [
+                1
+            ],
+            "size": "0.33"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/brewdog-lost-abbey-lost-dog/160824/",
+            "name": "Lost Dog",
+            "price": null,
+            "beer_type": 8,
+            "amount": 1,
+            "abv": "11.5",
+            "brewers": [
+                1,
+                11
+            ],
+            "size": "0.33"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "beerlist.beer",
+        "fields": {
+            "rating": null,
+            "bought_date": null,
+            "ratebeerurl": "http://www.ratebeer.com/beer/black-death-beer/158101/",
+            "name": "Black Death",
+            "price": null,
+            "beer_type": 12,
+            "amount": 0,
+            "abv": "5.8",
+            "brewers": [
+                12
+            ],
+            "size": "0.33"
+        }
+    }
+]
